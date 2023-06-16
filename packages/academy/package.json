@@ -1,0 +1,19 @@
+{
+  "name": "@nodet2/academy",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "start": "node dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fantastic/core": "^1.0.0",
+    "@nodet2/core": "^1.0.0"
+  }
+}

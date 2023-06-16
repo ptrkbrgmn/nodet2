@@ -1,0 +1,20 @@
+{
+  "name": "nodet2",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "tsc --build --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/core",
+    "packages/academy",
+    "packages/event"
+  ],
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "files": [], //Empty files array tells TypeScript to ignore all files except those in the references.
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/academy" },
+    { "path": "packages/event" }
+  ]
+}

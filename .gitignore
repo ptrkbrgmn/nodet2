@@ -33,6 +33,9 @@ config/_revision
 .tags
 
 /dist
+dist/
+
+tsconfig.tsbuildinfo
 
 # Local .terraform directories
 **/.terraform/*
@@ -40,3 +43,4 @@ config/_revision
 # .tfstate files
 *.tfstate
 *.tfstate.*
+packages/academy/tsconfig.tsbuildinfo

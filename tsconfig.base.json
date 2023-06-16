@@ -10,7 +10,14 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["lib/@types", "node_modules/@types"],
+    "types": ["mocha", "chai"],
 
     "composite": true
+  },
+  "ts-node": {
+    "files": true,
+    "experimentalSpecifierResolution": "node",
+    "esm": true
   }
 }

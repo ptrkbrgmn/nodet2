@@ -7,6 +7,9 @@ npm run build --workspace ./packages/<app>
 Starta enskild app
 npm run start --workspace ./packages/<app>
 
+Kör tester för enskild app
+npm run test --workspace ./packages/<app>
+
 ---
 
 Setup:

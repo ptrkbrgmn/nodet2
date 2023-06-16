@@ -5,7 +5,15 @@ npm install
 npm install @nodet2/core -w @nodet2/academy
 npm install @nodet2/core -w @nodet2/event
 npm build
+
+npm run build --workspace ./packages/core #This shouldn't be necessary
+npm run build --workspace ./packages/academy
+npm run build --workspace ./packages/event
+
 npm run lint
+
+npm run test --workspace ./packages/academy
+
 npm run start --workspace ./packages/core
 npm run start --workspace ./packages/academy
 npm run start --workspace ./packages/event

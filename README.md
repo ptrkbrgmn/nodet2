@@ -21,3 +21,7 @@ npm install @nodet2/core -w @nodet2/event
 Bra info:
 https://daveiscoding.com/nodejs-typescript-monorepo-via-npm-workspaces
 https://earthly.dev/blog/setup-typescript-monorepo/ (dock en del typos)
+
+Se config:
+nodet2/packages/academy (main) $ ts-node --showConfig
+nodet2/packages/academy (main) $ npx tsc --showConfig

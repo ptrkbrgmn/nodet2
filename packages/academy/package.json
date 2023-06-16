@@ -6,8 +6,11 @@
   "main": "dist/app.js",
   "scripts": {
     "build": "tsc --build --verbose",
-    "start": "node --experimental-specifier-resolution=node dist/src/app.js",
-    "test": "mocha"
+    "start": "node --experimental-specifier-resolution=node dist/app.js",
+    "pretest": ":> logs/test.log",
+    "test": "mocha",
+    "posttest": "npm run lint",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",

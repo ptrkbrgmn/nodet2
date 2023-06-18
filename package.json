@@ -2,9 +2,10 @@
   "name": "nodet2",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "private": true,
   "scripts": {
-    "build": "tsc --build --verbose",
+    "build": "tsc --build --force --verbose",
     "lint": "eslint ."
   },
   "keywords": [],

@@ -1,6 +1,10 @@
 Bygga
 npm run build
 
+Define dependencies between packages
+npm install @node2/core -w @nodet2/academy
+npm install @node2/core -w @nodet2/event
+
 Bygga enskild app
 npm run build --workspace ./packages/<app>
 

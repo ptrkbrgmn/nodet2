@@ -1,11 +1,16 @@
 #!/bin/bash
 
 rm -rf node_modules
+rm package-lock.json
+# rm packages/academy/tsconfig.tsbuildinfo
+# rm packages/event/tsconfig.tsbuildinfo
+# rm packages/core/tsconfig.tsbuildinfo
+
 npm install
 npm install @nodet2/core -w @nodet2/academy
 npm install @nodet2/core -w @nodet2/event
-npm build
 
+npm run build
 npm run build --workspace ./packages/core #This shouldn't be necessary
 npm run build --workspace ./packages/academy
 npm run build --workspace ./packages/event

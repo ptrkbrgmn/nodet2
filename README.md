@@ -1,31 +1,61 @@
-Bygga
+## Monorepo - Typescript NPM workspaces
+
+### Installera, bygg, lint, test
+
+```shell
+./re-initialize
+```
+
+### Bygga allt
+
+```shell
 npm run build
+```
 
-Define dependencies between packages
-npm install @node2/core -w @nodet2/academy
-npm install @node2/core -w @nodet2/event
+### Define dependencies between packages
 
-Bygga enskild app
+```shell
+npm install @node2/core -w @nodet2/<app1>
+npm install @node2/core -w @nodet2/<app2>
+```
+
+### Bygga enskild app
+
+```shell
 npm run build --workspace ./packages/<app>
+```
 
-Starta enskild app
+### Starta enskild app
+
+```shell
 npm run start --workspace ./packages/<app>
+```
 
-Kör tester för enskild app
+### Kör tester för enskild app
+
+```shell
 npm run test --workspace ./packages/<app>
+```
+
+### Define the dependencies between packages
+
+```shell
+npm install @nodet2/core -w @nodet2/academy
+npm install @nodet2/core -w @nodet2/event
+```
+
+### Se config
+
+Antingen root dir eller i package root dir
+
+```shell
+nodet2/packages/<app> (main) $ ts-node --showConfig
+nodet2/packages/<app> (main) $ npx tsc --showConfig
+```
 
 ---
 
-Setup:
+### Bra info/exempel
 
-Define the dependencies between the packages:
-npm install @nodet2/core -w @nodet2/academy
-npm install @nodet2/core -w @nodet2/event
-
-Bra info:
 https://daveiscoding.com/nodejs-typescript-monorepo-via-npm-workspaces
 https://earthly.dev/blog/setup-typescript-monorepo/ (dock en del typos)
-
-Se config:
-nodet2/packages/academy (main) $ ts-node --showConfig
-nodet2/packages/academy (main) $ npx tsc --showConfig

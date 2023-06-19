@@ -20,5 +20,5 @@ npm run lint
 npm run test --workspace ./packages/academy
 
 npm run start --workspace ./packages/core
-npm run start --workspace ./packages/academy
 npm run start --workspace ./packages/event
+npm run start --workspace ./packages/academy
